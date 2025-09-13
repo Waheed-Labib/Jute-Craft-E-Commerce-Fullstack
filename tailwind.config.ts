@@ -8,7 +8,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: "#1DA1F2",
+        primary: {
+          light: "#fffaeb",
+          DEFAULT: "#c5701b"
+        },
+        accent: {
+          light: "#dbfce7",
+          dark: "#2b6d30"
+        },
+        neutral: {
+          light: "#364153",
+          dark: "#101828"
+        },
+        whatsApp: {
+          DEFAULT: "#08ca5a"
+        },
+        bg: {
+          DEFAULT: "#f9fafb",
+          bright: "#ffffff"
+        }
       },
     },
   },
