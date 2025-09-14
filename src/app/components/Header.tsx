@@ -34,23 +34,23 @@ export default function Navbar() {
                 <nav className="hidden md:flex items-center gap-4 lg:gap-8">
                     <Link
                         href="/"
-                        className="relative text-sm font-medium text-amber-700 after:absolute after:left-0 after:bottom-[-6px] after:h-[2px] after:w-full after:bg-amber-600"
+                        className="relative text-sm font-medium text-primary after:absolute after:left-0 after:bottom-[-6px] after:h-[2px] after:w-full after:bg-primary/80"
                     >
                         Home
                     </Link>
-                    <Link href="/products" className="text-sm font-medium text-gray-700 hover:text-amber-700">
+                    <Link href="/products" className="text-sm font-medium text-foreground-light hover:text-primary">
                         All Products
                     </Link>
                     {categories.map((cat) => (
                         <Link
                             key={cat.name}
                             href={cat.href}
-                            className="text-sm font-medium text-gray-700 hover:text-amber-700"
+                            className="text-sm font-medium text-foreground-light hover:text-primary"
                         >
                             {cat.name}
                         </Link>
                     ))}
-                    <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-amber-700">
+                    <Link href="/about" className="text-sm font-medium text-foreground-light hover:text-primary">
                         About Us
                     </Link>
                 </nav>

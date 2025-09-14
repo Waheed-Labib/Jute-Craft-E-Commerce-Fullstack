@@ -3,18 +3,20 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import heroImg from "../../../../public/images/hero.png"
+import { FaLeaf } from "react-icons/fa";
 
 export default function Hero() {
     return (
         <section className="bg-primary-background">
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-16">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-16 px-8">
                 {/* Left Content */}
                 <div className="space-y-6">
                     <Badge className="">
                         100% Natural & Eco-Friendly
                     </Badge>
                     <h1
-                        className={`text-4xl sm:text-5xl font-[var(--font-poppins)] text-foreground`}
+                        className={`text-4xl sm:text-5xl font-[var(--font-poppins)] text-foreground font-bold`}
                     >
                         Sustainable Living with{" "}
                         <span className="text-primary">Jute Craft</span>
@@ -37,7 +39,7 @@ export default function Hero() {
                 <div className="relative flex justify-center lg:justify-end">
                     <div className="rounded-2xl overflow-hidden shadow-md">
                         <Image
-                            src="/hero.png" // replace with actual path inside public/
+                            src={heroImg}
                             alt="Eco-friendly Jute Bag"
                             width={500}
                             height={400}
@@ -46,12 +48,13 @@ export default function Hero() {
                     </div>
 
                     {/* Floating Badge */}
-                    <div className="absolute bottom-4 right-4">
+                    <div className="absolute bottom-[-16] right-[-12]">
                         <Badge
                             variant="outline"
-                            className="bg-white shadow flex items-center gap-2 text-green-600"
+                            className="shadow flex items-center gap-2 p-2"
                         >
-                            <span className="text-green-600">🌿</span> Eco-Friendly
+                            <FaLeaf />
+                            <span className="text-sm font-bold">Eco-Friendly</span>
                         </Badge>
                     </div>
                 </div>
