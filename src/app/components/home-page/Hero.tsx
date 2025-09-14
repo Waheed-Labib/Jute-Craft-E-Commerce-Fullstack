@@ -9,7 +9,7 @@ import { FaLeaf } from "react-icons/fa";
 export default function Hero() {
     return (
         <section className="bg-primary-background">
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-16 px-8">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-16">
                 {/* Left Content */}
                 <div className="space-y-6">
                     <Badge className="">
