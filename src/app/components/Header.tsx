@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input" // ⬅️ import Input
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { NavbarSearch } from "./search/NavbarSearch"
@@ -18,7 +17,7 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="sticky top-0 z-50 border-b border-foreground-light/10 w-full bg-background">
+        <header className="sticky top-0 z-50 border-b border-foreground-light/10 w-full bg-background-nav">
             <div className="container flex items-center justify-between max-w-full p-4 md:px-8">
                 {/* Logo + Tagline */}
                 <Link href="/" className="flex items-center gap-2">
