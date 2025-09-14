@@ -46,7 +46,7 @@
   --radius: 0.625rem;
   --background: #f9fafb;
   --foreground: #101828;
-  --foreground-light: "#364153";
+  --foreground-light: #364153;
   --card: #ffffff;
   --card-foreground: #101828;
   --popover: #ffffff;
@@ -60,7 +60,7 @@
   --accent-foreground: #2b6d30;
   --destructive: oklch(0.577 0.245 27.325);
   --border: #364153;
-  --input: oklch(0.922 0 0);
+  --input: #f9fafb;
   --ring: #364153;
   /* --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
