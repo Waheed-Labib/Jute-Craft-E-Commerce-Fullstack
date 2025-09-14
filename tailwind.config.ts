@@ -1,36 +1,18 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 const config: Config = {
+  darkMode: "class",
   content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          light: "#fffaeb",
-          DEFAULT: "#c5701b"
-        },
-        accent: {
-          light: "#dbfce7",
-          dark: "#2b6d30"
-        },
-        neutral: {
-          light: "#364153",
-          dark: "#101828"
-        },
-        whatsApp: {
-          DEFAULT: "#08ca5a"
-        },
-        bg: {
-          DEFAULT: "#f9fafb",
-          bright: "#ffffff"
-        }
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [animate],
 };
 
 export default config;
