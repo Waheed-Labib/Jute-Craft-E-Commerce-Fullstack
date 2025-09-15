@@ -120,8 +120,8 @@ export const products: Product[] = [
         description: 'Strong and lightweight bag ideal for market trips and shopping.',
         image: 'https://images.unsplash.com/photo-1650373773073-a8920f3edf34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqdXRlJTIwYmFncyUyMGVjbyUyMGZyaWVuZGx5fGVufDF8fHx8MTc1Njg5NTc3OHww&ixlib=rb-4.1.0&q=80&w=1080',
         category: 'bags',
-        isInStock: false,
-        isFeatured: false,
+        isInStock: true,
+        isFeatured: true,
         createdAt: new Date('2024-12-18T13:20:00Z'),
         updatedAt: new Date('2024-12-18T13:20:00Z')
     },
