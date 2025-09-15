@@ -5,6 +5,9 @@ import { ArrowRight } from "lucide-react"
 import { products } from "@/data/mockData"
 
 export default function FeaturedProducts() {
+
+    const featuredProducts = products.filter(product => product.isFeatured);
+
     return (
         <section className="p-8 md:p-16">
             <div className="text-center mb-10">
@@ -15,7 +18,7 @@ export default function FeaturedProducts() {
             </div>
 
             <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-                {products.map((product) => (
+                {featuredProducts.map((product) => (
                     <ProductCard key={product._id} product={product} />
                 ))}
             </div>
