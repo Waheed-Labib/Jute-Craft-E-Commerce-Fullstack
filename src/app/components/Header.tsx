@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 border-b border-foreground-light/10 w-full bg-background-nav">
-            <div className="container flex items-center justify-between max-w-full p-4 md:px-8">
+            <div className="container flex items-center justify-between max-w-full py-4 md:px-16">
                 {/* Logo + Tagline */}
                 <Link href="/" className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center rounded-md bg-amber-100 font-bold text-amber-800">

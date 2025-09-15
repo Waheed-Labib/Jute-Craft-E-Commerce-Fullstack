@@ -1,15 +1,22 @@
 import React from 'react';
 import CategoryCard from '../../cards/CategoryCard';
+import { SectionHeadingBold, SectionHeadingLight } from '../../SectionHeadings';
 
 export default function Categories() {
+
+    
+
     return (
-        <section className="mx-auto p-8 mt-12">
+        <section className="mx-auto p-8 md:p-16 mt-12">
             {/* Heading */}
             <div className="text-center">
-                <h2 className="text-3xl font-semibold text-foreground">Our Product Categories</h2>
-                <p className="text-foreground-light mt-2">
+                <SectionHeadingBold>
+                    Our Product Categories
+                </SectionHeadingBold>
+
+                <SectionHeadingLight>
                     Explore our carefully curated collection of natural jute products
-                </p>
+                </SectionHeadingLight>
             </div>
 
             {/* Cards */}
