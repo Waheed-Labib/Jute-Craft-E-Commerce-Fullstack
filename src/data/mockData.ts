@@ -169,3 +169,30 @@ export const companyInfo = {
         }
     ]
 };
+
+export const features = [
+    {
+        icon: "Leaf",
+        title: "100% Natural",
+        description:
+            "All our products are made from pure, natural jute fiber with no harmful chemicals.",
+    },
+    {
+        icon: "Award",
+        title: "Handcrafted Quality",
+        description:
+            "Each item is carefully handwoven by skilled artisans ensuring unique quality.",
+    },
+    {
+        icon: "ShieldCheck",
+        title: "Eco-Friendly",
+        description:
+            "Biodegradable and sustainable materials that help protect our environment.",
+    },
+    {
+        icon: "Clock",
+        title: "Durable & Long-lasting",
+        description:
+            "Strong natural fibers ensure our products withstand daily use for years.",
+    },
+]

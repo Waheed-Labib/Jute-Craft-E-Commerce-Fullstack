@@ -29,3 +29,9 @@ export type ContactInfo = {
     email: string,
     address: string
 }
+
+export type Feature = {
+    icon: string; // name of the icon from lucide-react
+    title: string;
+    description: string;
+}
